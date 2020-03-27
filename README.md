@@ -43,6 +43,7 @@ composer install
 npm install
 ```
 4-) Create Database and Update database configurations in .env file (DB section)
+```
 5-) Run command
 ```
 php artisan migrate
