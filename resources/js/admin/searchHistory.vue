@@ -43,7 +43,7 @@
                     {
                         text: 'Home',
                         disabled: false,
-                        to: '/Admin',
+                        to: '/',
                     },
                    
 

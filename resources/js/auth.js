@@ -6,7 +6,7 @@
   * Authentication configuration, some of the options can be override in method calls
   */
  const config = {
-     authRedirect: '/Admin/login',
+     authRedirect: '/login',
      auth: bearer,
      http: axios,
      router: router,
@@ -18,18 +18,18 @@
      registerData: {
          url: 'auth/register',
          method: 'POST',
-         redirect: '/Admin'
+         redirect: '/'
      },
      loginData: {
          url: 'auth/login',
          method: 'POST',
-         redirect: '/Admin',
+         redirect: '/',
          fetchUser: true
      },
      logoutData: {
          url: 'auth/logout',
          method: 'POST',
-         redirect: '/Admin/login',
+         redirect: '/login',
          makeRequest: true
      },
      fetchData: {

@@ -2,7 +2,7 @@
     <v-app>
         <div>
             <app-header></app-header>
-            <app-dashboard v-if="this.$route.name === 'Admin'"></app-dashboard>
+            <app-dashboard v-if="this.$route.name === 'home'"></app-dashboard>
             <div v-else id="content" class="control-panel grid-table">
                 <router-view ></router-view>
 

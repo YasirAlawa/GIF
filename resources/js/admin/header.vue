@@ -5,10 +5,10 @@
                 
                 GIF Browsing
             </v-toolbar-title>
-            <router-link to="/Admin/image">
+            <router-link to="/image">
                 <v-btn class="mr-4" color="normal">New Image</v-btn>
             </router-link>
-            <router-link to="/Admin/history">
+            <router-link to="/history">
                 <v-btn class="mr-4" color="normal">History</v-btn>
             </router-link>
             <v-spacer></v-spacer>

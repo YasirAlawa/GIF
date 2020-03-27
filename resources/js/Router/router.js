@@ -22,7 +22,7 @@ const routes = [
  
    
     {
-        path: '/Admin/login',
+        path: '/login',
         name: 'Login',
         component: Login,
         meta: {
@@ -32,13 +32,13 @@ const routes = [
         }
     },
     {
-        path: '/Admin',
+        path: '/',
         component: Admin,
-        name:'Admin',
+        name:'home',
         meta: {
             auth: true,
             allow: true,
-            title: 'Admin'
+            title: 'home'
         },
         children: [
             {

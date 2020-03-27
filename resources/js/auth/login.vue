@@ -122,7 +122,7 @@
                         success: function (response) {
                     
                             this.message = response.data.message;
-                            this.$router.push({name: 'Admin'})
+                            this.$router.push({name: 'home'})
                         },
                         error: function (res) {
                             this.loading=false;

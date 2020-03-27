@@ -72,7 +72,7 @@
                     {
                         text: 'Home',
                         disabled: false,
-                        to: '/Admin',
+                        to: '/',
                     },                
                 ],   
                 form:{
@@ -134,7 +134,7 @@
                             self.success = true;
                             self.message = response.data.message;
                             setTimeout(function(){
-                                self.$router.push('/Admin');
+                                self.$router.push('/');
                             },1000);
                             
                         }, 1000);
