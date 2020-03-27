@@ -45,6 +45,14 @@
                                         />
                                     </v-col>
                                 </v-row>
+                                <vue-recaptcha 
+                                sitekey="6LemeOQUAAAAAGrHu2kZRLVRMCycgN4GfgAh5IvK" 
+                                :loadRecaptchaScript="true"
+                                @verify="verifyRecaptcha"
+                                @expired="expiredRecaptcha"
+                                >
+                                    
+                                </vue-recaptcha>
                                 <v-btn class="ma-auto"
                                        large
                                        :loading="loading"
@@ -66,13 +74,16 @@
 
 
 <script>
+    import VueRecaptcha from 'vue-recaptcha';
     export default {
+        
         data() {
             return {
                 form: {
                     email: '',
                     password: '',
                 },
+                canLogin: false,
                 has_error: false,
                 loading: false,
                 errors: '',
@@ -81,35 +92,61 @@
             }
         },
         components: {
-            //     appHeader: Header,
-            //appMenu: Menu,
+             VueRecaptcha 
+         
         },
         methods: {
+            verifyRecaptcha () {
+                this.canLogin = true;
+            },
+            expiredRecaptcha () {
+                this.canLogin = false;              
+            },
             login() {
-                this.loading=true;
-                this.$auth.login({
-                    data: {
-                        email: this.form.email,
-                        password: this.form.password,
-                    },
-                    success: function (response) {
-                        console.log(response);
-                        this.message = response.data.message;
-                        this.$router.push({name: 'Admin'})
-                    },
-                    error: function (res) {
-                        this.loading=false;
-                        this.has_error = true;
-                        console.log(res.response.data);
-                        this.errors = res.response.data.error;
-                        this.message = res.response.data.msg;
-                    },
-                    rememberMe: true,
-                    fetchUser: true
-                });
+                try
+                {
+                    if(!this.canLogin)
+                    {
+                        throw new Error('Recaptcha is invalid');
+                    }
+                    else
+                    {
+                        this.has_error = false;        
+                    }
+                    this.loading=true;
+                    this.$auth.login({
+                        data: {
+                            email: this.form.email,
+                            password: this.form.password,
+                        },
+                        success: function (response) {
+                    
+                            this.message = response.data.message;
+                            this.$router.push({name: 'Admin'})
+                        },
+                        error: function (res) {
+                            this.loading=false;
+                            this.has_error = true;                        
+                            this.errors = res.response.data.error;
+                            this.message = res.response.data.msg;
+                        },
+                        rememberMe: true,
+                        fetchUser: true
+                    });
+                }
+                catch(err)
+                {      
+                    this.loading=false;
+                    this.has_error = true;                        
+                    this.errors = err;
+                    this.message = err;
+                }
             }
         },
         mounted() {
+            let recaptchaScript = document.createElement('script')
+            recaptchaScript.setAttribute('src', 'https://www.google.com/recaptcha/api.js?onload=vueRecaptchaApiLoaded&render=6LemeOQUAAAAAOumbYUsabuxxuReUCY73pYzfILb')
+            document.head.appendChild(recaptchaScript)
             setTimeout(function () {
                 $('#spinner').fadeOut('slow')
             }, 2000)

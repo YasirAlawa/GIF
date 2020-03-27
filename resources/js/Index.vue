@@ -1,8 +1,9 @@
 <template>
     
     <v-app>
-            <vue-headful title="Title from vue-headful"/>
+          
             <div>
+            
                 <router-view></router-view>
             </div>
     </v-app>
