@@ -62,11 +62,11 @@
 </template>
 
 <script>
-    import SideBar from './sideBar.vue';
+  
     export default {
         components: {
-            appSideBar: SideBar,
-            //appMenu: Menu,
+          
+        
         },
         data() {
             return {

@@ -22,22 +22,27 @@ DIRECTORY STRUCTURE
 
 Vue.js DIRECTORY STRUCTURE (resources\js)
 -------------------
-      app.js               main file
+      app.js               main file for Vue.js application
       auth.js              authentication file
       Index.vue            index file for Vue.js application
       Router\router.js     routing file
       plugins              Vue.js plugins
+      admin                Vue.js views (dashborad, newimage form, searchhistory, ...)
+      auth                 Login form
+      components           404 page
+      helpers              contains helpers components for application
+
 
 ## Installation
 1-) Run command (using PHP 7.3) to install dependent 3rd-party packages
 ```
-composer update
+composer install
 ```
 2-) Run command  to install Vue.js dependent 3rd-party packages
 ```
 npm install
 ```
-4-) Create Database and Update database configurations in .env file
+4-) Create Database and Update database configurations in .env file (DB section)
 5-) Run command
 ```
 php artisan migrate
@@ -81,7 +86,7 @@ We can browse search history from history option in fome page, the result will b
 
 ## Test Cases
 
-we have one test case for testing login with fake user
+We have one test case for testing login with fake user
 
 testcase tests\Feature\UserTest.php
 
