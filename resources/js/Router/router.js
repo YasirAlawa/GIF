@@ -13,26 +13,12 @@ import notfound from '../components/404'
 
 //################### End of Admin Panel #############################
 
-//################### Website Pages #############################
-import Home from '../home/index'
 
-
-
-//################### End of Website Pages #############################
 
 Vue.use(VueRouter);
 
 const routes = [
-    {
-        path: '/',
-        name: 'home',
-        component: Home,
-        props:true,
-        meta: {
-            allow: true,
-            title: 'Home',
-        }
-    },
+   
  
    
     {

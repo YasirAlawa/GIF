@@ -11,7 +11,6 @@
 |
 */
 
-Route::get('/botman' , 'BotmanController@index')->name('botman.index');
 Route::get('{any}/{id?}', 'GeneralController@index')->where('any', '^(?!api\/)[\/\w\.-]*');
 //Route::get('{any}', function () {
 //    return view('index');

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <meta name="description" content="{{ $article ? $article->title : 'GIF Browsing' }}"/>
+    
     <meta property="og:image:width"  content="1240"/>
     <meta property="og:image:height" content="650"/>
 

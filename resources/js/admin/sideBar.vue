@@ -152,17 +152,7 @@
                     ['Management', 'mdi-star'],
                     ['Settings', 'mdi-folder'],
                 ],
-                categories: [
-                    {icon: 'scatter_plot', text: 'Show Categories', link: '/Admin/category/show'},
-                    {icon: 'mdi-content-duplicate', text: 'Sub Categories', link: '/Admin/category/show-subcategory'}
-                ],
-                articles: [
-                    {icon: 'local_library', text: 'Show Articles', link: '/Admin/article/index'},
-                ],
-                Permissions: [
-                    {icon: 'group_add', text: 'Group', link: '/Admin/users/role/index'},
-                    {icon: 'lock', text: 'Permission', link: '/Admin/users/permission/index'},
-                ],
+                
                 drawer: false,
             }
         }

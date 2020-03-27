@@ -18,9 +18,7 @@ Route::post('auth/login', 'AuthController@login')->name('login');
 
 
 
-Route::prefix('user')->group(function () {
-    Route::get('profile/{id}', 'UserController@userWorks');
-});
+
 
 //##################### End Without Authentication ##############################################
 
@@ -38,7 +36,7 @@ Route::middleware('jwt.auth')->group(function () {
         Route::get('auth/refresh', 'AuthController@refresh');
     });
 
-    Route::get('dashboard/counter','GeneralController@dashboard');
+  
 
     Route::get('dashboard/search/{q}/{page}','GeneralController@search');
 
