@@ -1,0 +1,40 @@
+[33m4228810[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{0}: reset: moving to origin/master
+[33m9985508[m HEAD@{1}: reset: moving to HEAD
+[33m9985508[m HEAD@{2}: reset: moving to HEAD
+[33m9985508[m HEAD@{3}: commit: change home page design
+[33m666f955[m HEAD@{4}: merge origin/master: Merge made by the 'recursive' strategy.
+[33mcf1fbb7[m HEAD@{5}: commit: change home page design
+[33m036d08c[m HEAD@{6}: commit: change login page design
+[33m4fd6e7d[m HEAD@{7}: commit: fix some bugs in home page
+[33m533ca1c[m HEAD@{8}: commit: fix home page responsive
+[33m62688bf[m HEAD@{9}: pull --progress --no-stat -v --progress origin master: Fast-forward
+[33m93bdb7a[m HEAD@{10}: pull --progress --no-stat -v --progress origin master: Fast-forward
+[33md470e99[m HEAD@{11}: commit: edit home page and add dashboard
+[33m7553757[m HEAD@{12}: commit (merge): fix conflict
+[33m936691e[m HEAD@{13}: checkout: moving from facebook_post to master
+[33m5d020fa[m[33m ([m[1;32mfacebook_post[m[33m)[m HEAD@{14}: commit (merge): facebook merge
+[33m2d7a2e1[m HEAD@{15}: checkout: moving from master to facebook_post
+[33m936691e[m HEAD@{16}: commit: dashboard
+[33ma5f3908[m HEAD@{17}: commit: finish home page
+[33m3819592[m HEAD@{18}: commit: solve router duplicate
+[33m269cd48[m HEAD@{19}: commit: fix conflict
+[33m8d9aa1e[m HEAD@{20}: pull origin master: Fast-forward
+[33me12af1f[m HEAD@{21}: checkout: moving from upload_pictures to master
+[33ma2fb07e[m[33m ([m[1;32mupload_pictures[m[33m)[m HEAD@{22}: commit (merge): hhh
+[33mf008740[m HEAD@{23}: checkout: moving from master to upload_pictures
+[33me12af1f[m HEAD@{24}: commit: Home Page
+[33m9a3f295[m HEAD@{25}: commit: fix
+[33m6a36c5d[m HEAD@{26}: pull origin master: Fast-forward
+[33m8f4e1e1[m HEAD@{27}: checkout: moving from articls_crud to master
+[33m575be4a[m[33m ([m[1;32marticls_crud[m[33m)[m HEAD@{28}: commit (merge): fix conflict
+[33m8fdc8f5[m HEAD@{29}: checkout: moving from category to articls_crud
+[33m896e1ec[m[33m ([m[1;32mcategory[m[33m)[m HEAD@{30}: commit: category
+[33m8f4e1e1[m HEAD@{31}: checkout: moving from master to category
+[33m8f4e1e1[m HEAD@{32}: commit: Finish Category and sub category CRUD ..
+[33mabb8799[m HEAD@{33}: commit: Change category and subcategory
+[33m9619fdf[m HEAD@{34}: commit: edit gitignore
+[33m4a659cc[m HEAD@{35}: commit: Finish Show Categories and Sub-Cat
+[33md8ef0a1[m HEAD@{36}: commit: show categories and add categories
+[33m52c62b0[m HEAD@{37}: commit: initial commit
+[33meaeac60[m HEAD@{38}: commit: initial commit
+[33md00def0[m HEAD@{39}: clone: from git@gitlab.com:ammar.hammadeh/syrian-research.git

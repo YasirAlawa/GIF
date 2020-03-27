@@ -1,0 +1,43 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "npm run development",
+        "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "watch": "npm run development -- --watch",
+        "watch-poll": "npm run watch -- --watch-poll",
+        "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "prod": "npm run production",
+        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+    },
+    "devDependencies": {
+        "@ckeditor/ckeditor5-image": "^16.0.0",
+        "@mdi/font": "^4.9.95",
+        "axios": "^0.19.2",
+        "cross-env": "^5.1",
+        "css-loader": "^3.4.2",
+        "deepmerge": "^4.2.2",
+        "fibers": "^4.0.2",
+        "font-awesome": "^4.7.0",
+        "jquery": "^3.2",
+        "laravel-mix": "^4.0.7",
+        "material-design-icons-iconfont": "^5.0.1",
+        "resolve-url-loader": "^2.3.1",
+        "sass": "^1.25.0",
+        "sass-loader": "^7.3.1",
+        "vue": "^2.6.11",
+        "vue-router": "^3.1.5",
+        "vue-template-compiler": "^2.6.11",
+        "vuetify": "^2.2.12"
+    },
+    "dependencies": {
+        "@chenfengyuan/vue-qrcode": "^1.0.2",
+        "@ckeditor/ckeditor5-build-classic": "^16.0.0",
+        "@ckeditor/ckeditor5-vue": "^1.0.1",
+        "@websanova/vue-auth": "^2.21.15-beta",
+        "material-icons": "^0.3.1",
+        "vue-axios": "^2.1.5",
+        "vue-headful": "^2.1.0",
+        "vue-meta": "^2.3.2",
+        "vue-swal": "^1.0.0"
+    }
+}

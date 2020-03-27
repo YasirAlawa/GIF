@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'Bahij TheSansArabic Plain';
+    src: url(/fonts/BahijTheSansArabic-Plain.eot?763a5996f504172d91e6c4863fe353e5);
+    src: url(/fonts/BahijTheSansArabic-Plain.eot?763a5996f504172d91e6c4863fe353e5?#iefix) format('embedded-opentype'),
+    url(/fonts/BahijTheSansArabic-Plain.woff2?91a34e5d612427455535c62e8dbb4cc3) format('woff2'),
+    url(/fonts/BahijTheSansArabic-Plain.woff?239af8b73ae3e0a3c6242dd167a899b7) format('woff'),
+    url(/fonts/BahijTheSansArabic-Plain.ttf?60921d77bcf0ddd23739c1354b2c7e0b) format('truetype'),
+    url(/fonts/BahijTheSansArabic-Plain.svg?8c0436c6313da8afe7d6642425355fea#BahijTheSansArabic-Plain) format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bahij TheSansArabic';
+    src: url(/fonts/BahijTheSansArabic-Black.eot?396cc4f2950eb5e85be06fbe859797cb);
+    src: url(/fonts/BahijTheSansArabic-Black.eot?396cc4f2950eb5e85be06fbe859797cb?#iefix) format('embedded-opentype'),
+    url(/fonts/BahijTheSansArabic-Black.woff2?9ba1bd104bd1c307734155cd1dc5caf3) format('woff2'),
+    url(/fonts/BahijTheSansArabic-Black.woff?2467a9ff6ff0b79c37014059702a7e12) format('woff'),
+    url(/fonts/BahijTheSansArabic-Black.ttf?ec00659de3359ae4d109b12d5df90c32) format('truetype'),
+    url(/fonts/BahijTheSansArabic-Black.svg?bc437a58df7b93a9d0daad7c3b5a3ad6#BahijTheSansArabic-Black) format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+body{
+    margin-bottom: 0 !important;
+}
+body, .v-application{
+    font-family: 'Bahij TheSansArabic Plain';
+}
+
+.blod_bahij{
+    font-family: 'Bahij TheSansArabic';
+}
+.FixedLoader {
+    position: fixed;
+    width: 80%;
+    height: 100vh;
+    background: #FAFAFA;
+    z-index: 10000;
+    left: 20%;
+    top: 70px;
+}
+
+.FixedLoader i {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+}
+.grid-table
+{
+    width: 75%;
+    margin: auto;
+}
+.new-image-form{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.images{
+    margin-left:5px ;
+    margin-right:5px ;
+}
+
