@@ -30,7 +30,7 @@ Vue.js DIRECTORY STRUCTURE (resources\js)
       admin                Vue.js views (dashborad, newimage form, searchhistory, ...)
       auth                 Login form
       components           404 page
-      helpers              contains helpers components for application
+      helpers              contains some useful components for application
 
 
 ## Installation
