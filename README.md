@@ -83,6 +83,8 @@ Now we can search images in home page : http://localhost:8000/ by entering keywo
 
 We get first three results from any search operation and we can get more results by clicking Load More button.
 
+By clicking on any image in result a modal will be opened contains image carousel start with the clicked image;
+
 We can browse search history from history option in fome page, the result will be datatable shows date and keywords for each search operation, in datatable we have pagination and sorting on date.
 
 
