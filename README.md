@@ -77,3 +77,12 @@ Now we can search images in home page : http://localhost:8000/ by entering keywo
 We get first three results from any search operation and we can get more results by clicking Load More button.
 
 We can browse search history from history option in fome page, the result will be datatable shows date and keywords for each search operation, in datatable we have pagination and sorting on date.
+
+
+## Test Cases
+
+we have one test case for testing login with fake user
+
+testcase tests\Feature\UserTest.php
+
+we can run it php vendor/phpunit/phpunit/phpunit  --filter  {testLoginApi}
